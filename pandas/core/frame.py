@@ -12761,7 +12761,7 @@ class DataFrame(NDFrame, OpsMixin):
 
     def idxmin(
         self, axis: Axis = 0, skipna: bool = True, numeric_only: bool = False
-    ) -> Series:
+    ) -> DataFrame:
         """
         Return index of first occurrence of minimum over requested axis.
 
@@ -12782,7 +12782,7 @@ class DataFrame(NDFrame, OpsMixin):
 
         Returns
         -------
-        Series
+        DataFrame
             Indexes of minima along the specified axis.
 
         Raises
@@ -12868,7 +12868,7 @@ class DataFrame(NDFrame, OpsMixin):
 
     def idxmax(
         self, axis: Axis = 0, skipna: bool = True, numeric_only: bool = False
-    ) -> Series:
+    ) -> DataFrame:
         """
         Return index of first occurrence of maximum over requested axis.
 
@@ -12889,7 +12889,7 @@ class DataFrame(NDFrame, OpsMixin):
 
         Returns
         -------
-        Series
+        DataFrame
             Indexes of maxima along the specified axis.
 
         Raises
